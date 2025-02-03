@@ -1,10 +1,10 @@
 #!/bin/bash
-IFS=$`\n`
+IFS=$(\n)
 for entry in $(cat /etc/passwd); do
-echo "Values in $entry -"
+    echo "Values in $entry -"
 
 IFS=:
 for value in $entry; do
-echo " $value"
+    echo " $value"
 done
 done
